@@ -1,7 +1,7 @@
 import React from 'react';
 import { Code2, Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
 
-export const ContactFooter: React.FC = () => {
+const ContactFooter: React.FC = () => {
   return (
     <footer id="contact" className="bg-slate-900 text-white pt-20 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -60,4 +60,6 @@ export const ContactFooter: React.FC = () => {
       </div>
     </footer>
   );
-};
+}
+
+export { ContactFooter }

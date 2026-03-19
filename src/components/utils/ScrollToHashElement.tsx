@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-export const ScrollToHashElement = () => {
+const ScrollToHashElement = () => {
   const location = useLocation();
   useLayoutEffect(() => {
     const { hash } = location;
@@ -13,4 +13,6 @@ export const ScrollToHashElement = () => {
     }
   }, [location]);
   return null;
-};
+}
+
+export { ScrollToHashElement }

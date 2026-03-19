@@ -2,13 +2,13 @@ import "../index.css";
 import React from 'react';
 import { repo } from '../data/repository';
 
-export const PortfolioSection: React.FC = () => {
+const PortfolioSection: React.FC = () => {
   return (
     <section id="portfolio" className="section-portfolio">
       <div className="section-container">
         <div className="portfolio-header">
           <div>
-            <h2 className="portfolio-sublabel">Portfolio</h2>
+            {/* <h2 className="portfolio-sublabel">Portfolio</h2> */}
             <h3 className="portfolio-title">Featured Projects</h3>
           </div>
         </div>
@@ -30,4 +30,6 @@ export const PortfolioSection: React.FC = () => {
       </div>
     </section>
   );
-};
+}
+
+export { PortfolioSection }

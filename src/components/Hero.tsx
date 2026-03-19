@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-export const Hero: React.FC = () => {
+const Hero: React.FC = () => {
   return (
     <section className="hero">
       {/* Background decoration */}
@@ -31,4 +31,6 @@ export const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
+}
+
+export { Hero }

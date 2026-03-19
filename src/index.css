@@ -149,6 +149,9 @@ html {
   .project-name {
     @apply text-2xl font-bold mb-3;
   }
+  .project-preview {
+    @apply w-full h-48 object-cover rounded-lg mb-6 border border-dev-dark/30;
+  }
   .project-summary {
     @apply text-gray-300 mb-6 text-sm leading-relaxed;
   }

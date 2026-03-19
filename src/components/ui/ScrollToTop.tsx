@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronUp } from 'lucide-react';
 
-export const ScrollToTop: React.FC = () => {
+const ScrollToTop: React.FC = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
     const handleScroll = () => setShow(window.scrollY > 300);
@@ -17,4 +17,6 @@ export const ScrollToTop: React.FC = () => {
       <ChevronUp className="chevron-up" />
     </button>
   ) : null;
-};
+}
+
+export { ScrollToTop }

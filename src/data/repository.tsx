@@ -1,4 +1,3 @@
-import React from 'react';
 import { Rocket, RefreshCw, ShieldCheck, Users } from 'lucide-react';
 import { Service, Project, Testimonial } from '../domain/models';
 
@@ -6,7 +5,7 @@ import { Service, Project, Testimonial } from '../domain/models';
  * Singleton Repository to manage data access.
  * In a real app, this would fetch from an API.
  */
-export class DevReliantRepository {
+class DevReliantRepository {
   private static instance: DevReliantRepository;
 
   private constructor() { }
@@ -54,21 +53,24 @@ export class DevReliantRepository {
         "FinTech",
         "Migrated a 15-year-old JSP codebase to React/Go.",
         "Reduced operational costs by 45% and improved load times by 2s.",
-        ["Go", "React", "Docker"]
+        ["Go", "React", "Docker"],
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800"
       ),
       new Project(
         "HealthStream MVP",
         "Healthcare",
         "Developed a HIPAA-compliant patient portal from scratch.",
         "Launched in 12 weeks; Client raised Series A.",
-        ["TypeScript", "AWS", "Next.js"]
+        ["TypeScript", "AWS", "Next.js"],
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800"
       ),
       new Project(
         "AutoTest Suite",
         "E-Commerce",
         "Built full coverage automation for a high-traffic shop.",
         "Caught 50+ critical bugs pre-production.",
-        ["Selenium", "Python", "Jenkins"]
+        ["Selenium", "Python", "Jenkins"],
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800"
       )
     ];
   }
@@ -82,4 +84,6 @@ export class DevReliantRepository {
   }
 }
 
-export const repo = DevReliantRepository.getInstance();
+const repo = DevReliantRepository.getInstance();
+
+export {repo}
