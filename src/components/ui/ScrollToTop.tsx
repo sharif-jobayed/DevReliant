@@ -12,9 +12,9 @@ export const ScrollToTop: React.FC = () => {
   return show ? (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed bottom-8 right-8 p-3 bg-dev-primary text-white rounded-full shadow-lg hover:bg-dev-light hover:text-dev-darkest transition-all z-40 animate-bounce"
+      className="scroll-top-btn"
     >
-      <ChevronUp className="h-6 w-6" />
+      <ChevronUp className="chevron-up" />
     </button>
   ) : null;
 };

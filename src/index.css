@@ -240,6 +240,9 @@ html {
 
   /* === Scroll To Top === */
   .scroll-top-btn {
-    @apply fixed bottom-8 right-8 p-3 bg-dev-primary text-white rounded-full shadow-lg hover:bg-dev-light transition-all duration-300 z-40 transform hover:scale-110;
+    @apply fixed bottom-8 right-8 p-3 bg-dev-primary text-white rounded-full shadow-lg hover:bg-dev-light transition-all duration-300 z-40 transform hover:scale-110 cursor-pointer;
+  }
+  .chevron-up{
+    @apply h-6 w-6;
   }
 }
