@@ -1,4 +1,4 @@
-import "../../index.css";
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Code2, Menu, X } from 'lucide-react';

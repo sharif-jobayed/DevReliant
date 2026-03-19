@@ -1,4 +1,4 @@
-import "../index.css";
+
 import React from 'react';
 import { repo } from '../data/repository';
 
