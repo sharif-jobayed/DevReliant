@@ -1,4 +1,4 @@
-
+import "../../index.css";
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Code2, Menu, X } from 'lucide-react';
@@ -7,6 +7,7 @@ export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
+    { name: 'About Us', to: '/about' },
     { name: 'Services', to: '/#services' },
     { name: 'Portfolio', to: '/#portfolio' },
     { name: 'Testimonials', to: '/#testimonials' },

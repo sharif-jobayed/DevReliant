@@ -1,4 +1,4 @@
-
+import "../index.css";
 import React from 'react';
 import { repo } from '../data/repository';
 
@@ -12,7 +12,7 @@ export const ServicesSection: React.FC = () => {
         </div>
         <div className="services-grid">
           {repo.getServices().map((service) => (
-            <div key={service.id} className="service-card group">
+            <div key={service.id} className="service-card">
               <div className="service-icon">
                 {service.icon}
               </div>

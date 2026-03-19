@@ -5,9 +5,9 @@ import { Code2, Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-re
 export const ContactFooter: React.FC = () => {
   return (
     <footer id="contact" className="footer">
-      <div className="footer-container">
+      <div className="section-container">
         <div className="footer-grid">
-          <div>
+          <div className="footer-about">
             <div className="footer-brand">
               <Code2 className="h-8 w-8 text-dev-light" />
               <span className="font-bold text-2xl">DevReliant</span>
@@ -16,12 +16,12 @@ export const ContactFooter: React.FC = () => {
               Ready to scale your engineering? Let's discuss your architecture, your code, and your future.
             </p>
             <div className="footer-contacts">
-              <div className="contact-item">
+              <a href="mailto:hello@devreliant.tech" className="contact-item">
                 <Mail className="h-5 w-5 text-dev-light" /> <span>hello@devreliant.tech</span>
-              </div>
-              <div className="contact-item">
+              </a>
+              <a href="tel:+15550000000" className="contact-item">
                 <Phone className="h-5 w-5 text-dev-light" /> <span>+1 (555) 000-0000</span>
-              </div>
+              </a>
               <div className="contact-item">
                 <MapPin className="h-5 w-5 text-dev-light" /> <span>San Francisco, CA</span>
               </div>
