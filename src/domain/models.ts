@@ -27,7 +27,8 @@ export class Project extends Entity {
     public clientIndustry: string,
     public summary: string,
     public outcome: string,
-    public techStack: string[]
+    public techStack: string[],
+    public imageUrl: string
   ) {
     super();
   }

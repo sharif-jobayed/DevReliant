@@ -18,6 +18,7 @@ const PortfolioSection: React.FC = () => {
               <div className="p-8">
                 <div className="project-industry">{project.clientIndustry}</div>
                 <h4 className="project-name">{project.name}</h4>
+                <img src={project.imageUrl} alt={project.name} className="project-preview" />
                 <p className="project-summary">{project.summary}</p>
                 <div className="project-outcome-box">
                   <div className="project-outcome-label">Outcome:</div>
