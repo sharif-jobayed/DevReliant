@@ -3,14 +3,14 @@ import React from 'react';
 /**
  * Base entity class ensuring all domain objects have unique identifiers.
  */
-export abstract class Entity {
+abstract class Entity {
   readonly id: string;
   constructor() {
     this.id = crypto.randomUUID();
   }
 }
 
-export class Service extends Entity {
+class Service extends Entity {
   constructor(
     public title: string,
     public description: string,
@@ -21,7 +21,7 @@ export class Service extends Entity {
   }
 }
 
-export class Project extends Entity {
+class Project extends Entity {
   constructor(
     public name: string,
     public clientIndustry: string,
@@ -34,7 +34,7 @@ export class Project extends Entity {
   }
 }
 
-export class Testimonial extends Entity {
+class Testimonial extends Entity {
   constructor(
     public author: string,
     public role: string,
@@ -44,3 +44,5 @@ export class Testimonial extends Entity {
     super();
   }
 }
+
+export { Entity, Service, Project, Testimonial }
