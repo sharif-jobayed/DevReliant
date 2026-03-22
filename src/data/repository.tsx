@@ -20,28 +20,28 @@ class DevReliantRepository {
   getServices(): Service[] {
     return [
       new Service(
-        "MVP Launchpad",
-        "Rapid prototyping and end-to-end development of Minimum Viable Products to help startups validate ideas and secure funding.",
+        "Build & Launch Your First Product Fast",
+        "We build a working version of your business idea in weeks, not months. Prove your concept with real users and investors before making big investments.",
         <Rocket className="w-10 h-10" />,
-        ["React", "Node.js", "Cloud Native"]
+        ["Fast Launch", "Investor Ready", "Proven Concept"]
       ),
       new Service(
-        "Legacy Modernization",
-        "Strategic refactoring of monolithic legacy systems into scalable, modern microservices without business interruption.",
+        "Rescue Your Slow, Old Software",
+        "Your software is outdated, slow, and expensive to run. We modernize it gradually without shutting down your business—keep operating while we rebuild it piece-by-piece.",
         <RefreshCw className="w-10 h-10" />,
-        ["Migration", "Refactoring", "Cloud"]
+        ["Zero Downtime", "Speed Boost", "Cost Savings"]
       ),
       new Service(
-        "Enterprise QA Automation",
-        "Implementation of rigorous automated testing suites using Playwright and Selenium to ensure regression-free releases.",
+        "Find Bugs Before Your Customers Do",
+        "Every new release breaks something. We set up automated testing that catches 95% of issues before customers find them. Ship updates with confidence.",
         <ShieldCheck className="w-10 h-10" />,
-        ["Playwright", "CI/CD", "E2E Testing"]
+        ["Bug Prevention", "Automated Testing", "Quality Assurance"]
       ),
       new Service(
-        "Fractional CTO",
-        "Executive-level technology leadership on a fractional basis. We handle architecture, team structure, and code audits.",
+        "Your Technical Leader (Part-Time)",
+        "You need someone making tech decisions—choosing tools, hiring engineers, setting quality standards. We provide CTO-level guidance without the full-time salary.",
         <Users className="w-10 h-10" />,
-        ["Architecture", "Code Reviews", "Strategy"]
+        ["Tech Leadership", "Team Building", "Strategy"]
       )
     ];
   }
@@ -86,4 +86,4 @@ class DevReliantRepository {
 
 const repo = DevReliantRepository.getInstance();
 
-export {repo}
+export { repo }
