@@ -13,10 +13,12 @@ const ServicesSection: React.FC = () => {
         <div className="services-grid">
           {repo.getServices().map((service) => (
             <div key={service.id} className="service-card">
-              <div className="service-icon">
-                {service.icon}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="service-icon">
+                  {service.icon}
+                </div>
+                <h4 className="service-title">{service.title}</h4>
               </div>
-              <h4 className="service-title">{service.title}</h4>
               <p className="service-desc">{service.description}</p>
               <div className="flex flex-wrap gap-2">
                 {service.tags.map(tag => (
