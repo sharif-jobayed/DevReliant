@@ -24,3 +24,4 @@ dist-ssr
 
 # Custom
 node_modules
+.vite
