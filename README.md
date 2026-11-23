@@ -140,7 +140,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Email**: hello@devreliant.tech
+- **Email**: devreliantio@gmail.com
 - **Website**: [devreliant.tech](https://devreliant.tech)
 - **Location**: Bangladesh (Serving global clients)
 

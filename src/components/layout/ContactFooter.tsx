@@ -77,7 +77,7 @@ const ContactFooter: React.FC = () => {
             </p>
             <div className="footer-contacts">
               <div className="contact-item">
-                <Mail className="h-5 w-5 text-dev-light" /> <span>hello@devreliant.tech</span>
+                <Mail className="h-5 w-5 text-dev-light" /> <a href="mailto:devreliantio@gmail.com" className="hover:text-white transition-colors">devreliantio@gmail.com</a>
               </div>
               <div className="contact-item">
                 <Phone className="h-5 w-5 text-dev-light" /> <span>+1 (555) 000-0000</span>
